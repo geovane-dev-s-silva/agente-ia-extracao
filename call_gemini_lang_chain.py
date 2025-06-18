@@ -5,8 +5,10 @@ def call_gemini(pergunta: str) -> str:
     from langchain_google_genai import ChatGoogleGenerativeAI
     from langchain.schema import HumanMessage
     from langchain_core.messages import HumanMessage
+    from dotenv import load_dotenv
+    load_dotenv()
     
-    gemini_api_key = os.environ.get("GOOGLE_API_KEY")
+    gemini_api_key = os.environ.get("GEMINI_API_KEY")
     if not gemini_api_key:
         raise ValueError("GEMINI_API_KEY não encontrada nas variáveis de ambiente")
     

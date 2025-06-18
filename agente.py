@@ -16,6 +16,8 @@ import threading
 import time
 import base64
 from google.genai import types
+from dotenv import load_dotenv
+load_dotenv()
 from call_gemini_lang_chain import call_gemini
 # Suprimir warnings
 import warnings
