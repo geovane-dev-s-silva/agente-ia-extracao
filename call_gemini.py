@@ -7,7 +7,7 @@ from google.genai import types
 
 def call_gemini(pergunta: str) -> str:
     """ 
-    Método para carregar carregar os arquivos no modelo Gemini, e 
+    Método para carregar os arquivos no modelo Gemini, e 
     realizar a pergunta baseada em ambos os arquvos.
     """
     # Inicializa o cliente Gemini

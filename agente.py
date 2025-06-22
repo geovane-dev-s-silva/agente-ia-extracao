@@ -15,7 +15,6 @@ import logging
 import threading
 import time
 import base64
-from google.genai import types
 from dotenv import load_dotenv
 load_dotenv()
 from call_gemini_lang_chain import call_gemini
@@ -285,7 +284,7 @@ def initialize_agent():
     
     try:
         # Verificar API key
-        api_key = os.getenv("GOOGLE_API_KEY")
+        api_key = os.getenv("GOOGLE_API_KEY") 
         if not api_key:
             logger.error("GOOGLE_API_KEY não configurada!")
             return
@@ -403,4 +402,6 @@ if __name__ == '__main__':
     print("📊 Resumo: http://localhost:5000/api/summary")
     print("💬 Query: POST http://localhost:5000/api/query")
     
-    app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)
+    #app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)
+    app.run(host='0.0.0.0', port=5000, debug=False, use_reloader=False, threaded=True)
+    # O uso de `use_reloader=False` evita que o servidor reinicie duas vezes no modo debug

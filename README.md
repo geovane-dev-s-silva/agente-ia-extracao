@@ -38,21 +38,20 @@ pip install -r requirements.txt
 
 5. Crie um arquivo chamado .env na raiz do projeto com o seguinte conteúdo:
 
-OPENAI_API_KEY=sua-chave-da-openai-aqui
+OPENAI_API_KEY="sua-chave-da-openai-aqui"
 
-6. Rodar o script principal:
+6. Rodar o script principal e Front:
 
 bash
-python AgenteIAExtracao.py
+streamlit run agente.py
+streamlit run front.py
 
 O programa irá solicitar:
-Nome do arquivo CSV (exemplo: CSV\seuarquivo.csv)
 Uma pergunta a ser respondida com base nos dados do CSV.
 
 ✅ Exemplo de execução:
 
 bash
-Digite o caminho para o arquivo CSV: CSV\clientes.csv
 Digite sua pergunta: Quantos clientes são de São Paulo?
 
 👤👤👤 Autor: Grupo de Estudos Alquimistas Digitais
