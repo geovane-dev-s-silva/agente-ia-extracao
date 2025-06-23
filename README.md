@@ -13,9 +13,9 @@ Projeto Python para responder perguntas baseadas em arquivos CSV, usando a API d
 
 ## 🛠️ Instalação
 
+```bash
 1. Clone o repositório:
 
-```bash
 git clone agente-ia-extracao
 cd agente-ia-extracao
 
@@ -36,7 +36,7 @@ source venv/bin/activate
 bash
 pip install -r requirements.txt
 
-5. Crie um arquivo chamado .env na raiz do projeto com o seguinte conteúdo:
+5. Editar o arquivo chamado .env na raiz do projeto com o seguinte conteúdo:
 
 OPENAI_API_KEY="sua-chave-da-openai-aqui"
 
@@ -45,13 +45,13 @@ OPENAI_API_KEY="sua-chave-da-openai-aqui"
 bash
 streamlit run agente.py
 streamlit run front.py
+```
 
 O programa irá solicitar:
 Uma pergunta a ser respondida com base nos dados do CSV.
 
 ✅ Exemplo de execução:
 
-bash
 Digite sua pergunta: Quantos clientes são de São Paulo?
 
 👤👤👤 Autor: Grupo de Estudos Alquimistas Digitais
